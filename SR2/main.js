@@ -24,25 +24,36 @@ let ymny = [
 	"Демчина Роман",
 	"Дзюдзь Михайло"
 ];
+let ima = prompt('Ведіть імя користувача якому потрібно віправити лист');
 let misshok =document.getElementById(`tyble`)
+let massage =document.getElementById(`massage`)
 let  widro ='';
 let  chhek = '';
-let ima = prompt('Імя?');
-for(i=0 ; i<ymny.length ; i++ ){
- if(ymny[i].includes(ima)){
-    chhek = 'checked'
+let user_num = 0;
+
+for(i=0 ; i < ymny.length ; i++ ){
+if(ymny[i].includes(ima)){
+    chhek = 'checked';
+	user_num++
     }else{
         chhek = ''
 }
-   
-widro +=`
-<tr>
+ if(i % 2 > 0){
+  widro +=
+
+`<tr class="gray">
                 <td>${i+1}</td>
-                <td>${ymny[i]}</td>
+                <td class="num">${ymny[i]}</td>
                 <td align="center"><input type="checkbox" ${chhek}></td>
-            </tr>
-`
+            </tr>`;}else{
+				widro +=
+				`<tr class="">
+								<td>${i+1}</td>
+								<td class="num">${ymny[i]}</td>
+								<td align="center"><input type="checkbox" ${chhek}></td>
+							</tr>`
+			
+}}
 
-}
-
+massage.innerText = `Знайдено користувачів з імям ${ima} - ${user_num}`;
 misshok.innerHTML = widro;
