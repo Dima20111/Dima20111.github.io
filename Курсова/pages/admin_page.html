@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="menu">
+
+    </div>
+    <div class="add_tovar">
+        <div class="form">
+            <label for="">Назва товару</label><br>
+            <input type="text" class="tovaru_info" id="name_tovary"><br><br>
+
+            <label for="">Ціна товару</label><br>
+            <input type="number" class="tovaru_info" id="price_tovary"><br><br>
+
+            <label for="">Опис товару</label><br>
+            <input type="text" class="tovaru_info" id="opus_tovary"><br><br>
+
+            <label for="">Вага товару</label><br>
+            <input type="number" class="tovaru_info" id="vaga_tovary"><br><br>
+
+            <label for="">Гарантія товару</label><br>
+            <input type="number" class="tovaru_info" id="garantia_tovary"><br><br>
+            
+            <label for="">Виробник</label><br>
+            <select name="" id="vurobnuk">
+                <option value=""></option>
+                <option value="iphone">iphone</option>
+                <option value="redmi">redmi</option>
+                <option value="samsung">samsung</option>
+                <option value="poco">poco</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Motorola">Motorola</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="LG">LG</option>
+                <option value="Xiaomi">Xiaomi</option>
+            </select><br>
+            <label for="">Країна виробника</label><br>
+            <select name="" id="kraina">
+                <option value=""></option>
+                <option value="Україна">ukrane</option>
+                <option value="Америка">usa</option>
+                <option value="Канада">canada</option>
+                <option value="Китай">China</option>
+                <option value="Германія">Germani</option>
+            </select><br>
+            <label for="">Тип товару</label><br>
+            <select name="" id="type">
+                <option value=""></option>
+                <option value="telefon">телефон</option>
+                <option value="laptop">ноутбук</option>
+                <option value="planshe">планшет</option>
+            </select><br>
+            <label for="">Кольор</label><br>
+            <select name="" id="color">
+                <option value=""></option>
+                <option value="red">червоний</option>
+                <option value="black">чорний</option>
+                <option value="light">білий</option>
+                <option value="grey">сірий</option>
+            </select>
+
+
+        </div>
+    </div>
+    <div class="tovars">
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+    <script src="../firebase/config.js"></script>
+    <script src="../scripts/admin_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
